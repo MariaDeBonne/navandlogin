@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import "./_reboot.css";
+@import "./_utilities.css";
+@import "./_grid.css";
+@import "./_button.css";
+@import "./_header.css";
+@import "./_section.css";
+@import "./_form.css";
+
+* {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+  transition: 0.5s ease;
+}
+
+
+
+
+
+
+

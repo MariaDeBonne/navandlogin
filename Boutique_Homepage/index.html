@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+  <title>Westhause Boutique</title>
+
+<!-- Google Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+<!-- Fontawesome -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<link rel="stylesheet" href="assets/css/style.css" />
+
+<link rel="icon" href="assets/icon/favicon.ico" type="image/x-icon" />
+
+</head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row align-center justify-between">
+          <div class="column">
+          </div>
+            <div class="row align-center">
+              <div class="column">
+                <div class="logo-container">
+                <a href="index.html" class="logo" aria-label="logo" title="logo">
+                  <img src="assets/icon/logo.svg" alt="logo" />
+                </a>
+              </div>
+            </div>
+              <div class="column">
+                <nav class="navigation">
+                  <ul class="navigation-list">
+                    <li class="navigation-item">
+                      <a href="index.html" class="navigation-link">HOME</a>
+                    </li>
+                    <li class="navigation-item">
+                      <a href="#" class="navigation-link">NEW ARRIVALS</a>
+                    </li>
+                    <li class="navigation-item">
+                      <a href="#" class="navigation-link">SHOP</a>
+                    </li>
+                    <li class="navigation-item">
+                      <a href="aboutus.html" class="navigation-link">ABOUT US</a>
+                    </li>
+                    <li class="navigation-item">
+                      <a href="#" class="navigation-link">CONTACT US</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="column">
+                <nav class="icon-bar">
+                  <ul class="icon-bar-items">
+                    <li class="icon-bar-button">
+                <div class="search-button">
+                  <i class="fa fa-search"></i>
+                </div>
+                <div class="main-search">
+                  <button onclick="closeButton()" type="button" id="close-button" class="close-button">
+                    <img src="assets/icon/close-form-bt.svg" alt="Close">
+                  </button>
+                  <input type="text" class="text-search" placeholder="Search...">
+                  <button type="submit" class="search-submit">Search</button>
+                </li>
+                </div>
+                <li class="icon-bar-button">
+                <div id="login-btn" class="login-btn">
+                  <i class="fa fa-user"></i>
+                </div>
+                  <div class="login-container">
+                    <div id="login-form" class="login-form form">
+                        <div class="form-header">
+                          <button onclick="closeLoginForm()" type="button" class="close-btn">
+                            <img src="assets/icon/close-form-bt.svg" alt="Close">
+                          </button>
+                           <h2>Log in</h2>
+                          </div>
+                        <div class="form-body">
+                          <form>
+                            <div>
+                              <label for="email">Email:</label>
+                              <input type="email" id="email" name="email" placeholder="xxxx@xxxx.com" required>
+                            </div>
+                            <div>
+                              <label for="password">Password:</label>
+                              <input type="password" id="password" name="password" placeholder="******" required>
+                            </div>
+                       <button type="submit">Log In</button>
+                       <button type="submit">Forgot Password?</button>
+                       <p class="or">Don't have an account?</p>
+                       <button onclick="openSignupForm()" id="signup-btn" type="button">Sign Up</button>                       
+                      </form> 
+                    </div>
+                  </div>
+                </div>
+                     <div class="signup-container">
+                    <div id="signup-form" class="signup-form form">
+                        <div class="form-header">
+                          <h2>Sign Up</h2>    
+                          <button onclick="closeSignupForm()" type="button" class="close-btn">
+                            <img src="assets/icon/close-form-bt.svg" alt="Close">
+                          </button>                                        
+                        </div>
+                        <div class="form-body">
+                            <form onsubmit="return validateForm()">
+                              <div>
+                                <label for="fullname">Name:</label>
+                                <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+                              </div>
+                              <div>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="xxxx@xxxx.com" required>
+                              </div>
+                              <div>
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" placeholder="******" required>
+                              </div>
+                          <button id="submit-btn" type="submit">Submit</button> 
+                          </form>                
+                        </div>
+                      </div>   
+                    </div>   
+                  </li>
+                </ul>
+              </nav>                  
+            </div>              
+              </div>
+   </header>
+        
+        
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>CALL US</h1>
+        <div class="phone-button">
+          <i class="fa fa-phone"></i>
+        <span>+00 555 55 55</span>
+        <button type="button" class="hero-social-button"><img src="assets/icon/instagram.svg"></button>
+        <button type="button" class="hero-social-button"><img src="assets/icon/facebook.svg"></button>
+        <a href="#" class="button black-button">CONTACT US</a>   
+    </section>
+
+  <section class="products">
+    <div class="container-large relative">
+      <div class="welcome-content">
+        <h2>NEWARRIVALS</h2>
+        <div class="box-container">
+          <div class="box">
+            <div class="box-head">
+            <div class="box-bottom">
+              <img src="#">
+            </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="form-container">
+    <form id="MsgForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+  
+      <button type="submit" id="submitBtn">Submit</button>
+    </form>
+  </div>
+  
+
+
+    <section class="action">600px</section>
+    <section class="map">500px</section>
+    <footer>400px</footer>
+    <section class="copyright">100px</section>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+  </body>
+</html>
+
+
+	
+
